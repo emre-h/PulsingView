@@ -11,6 +11,8 @@ import android.view.View;
 
 public class PulsingView extends View {
 
+    private int startingX = 0;
+    private int startingY = 0;
     private int delayMillis = 10;
     private boolean layout = false; //Default
     private boolean progressive = false; //Default
@@ -55,6 +57,22 @@ public class PulsingView extends View {
 
     public void useItForLayout(boolean layout){
         this.layout = layout;
+    }
+
+    public int getStartingX() {
+        return startingX;
+    }
+
+    public int getStartingY(){
+        return startingY;
+    }
+
+    public void setStartingX(int startingX) {
+        this.startingX = startingX;
+    }
+
+    public void setStartingY(int startingY) {
+        this.startingY = startingY;
     }
 
     public void setStartingRadius(int startingRadius){
@@ -144,11 +162,11 @@ public class PulsingView extends View {
                 radius += increaseAmount;
             }
 
-            canvas.drawCircle(this.getPivotX()+this.getWidth()/2, this.getPivotY()+this.getHeight()/2, radius, paint);
+            canvas.drawCircle(startingX == 0 ? this.getPivotX() : startingX, startingY==0 ? this.getPivotY() : startingY, radius, paint);
         }else { //progressive
             radius = progress;
 
-            canvas.drawCircle(this.getPivotX()+this.getWidth()/2, this.getPivotY()+this.getHeight()/2, radius, paint);
+            canvas.drawCircle(startingX == 0 ? this.getPivotX() : startingX, startingY==0 ? this.getPivotY() : startingY, radius, paint);
         }
     }
 }
