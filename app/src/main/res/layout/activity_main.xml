@@ -6,8 +6,8 @@
     android:background="#000"
     tools:context=".MainActivity">
 
-    <com.emre.pulsingviewlibrary.PulsingView
-        android:id="@+id/pulsingView"
+    <com.emre.pulsingviewlibrary.PulsingLayout
+        android:id="@+id/pulsingLayout"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_width="150dp"

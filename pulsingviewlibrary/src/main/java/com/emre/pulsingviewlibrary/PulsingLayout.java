@@ -26,6 +26,10 @@ public class PulsingLayout extends RelativeLayout {
         pulsingView.setIncreaseAmount(10);
     }
 
+    public void setBackgroundColorOfLayout(int color){
+        relativeLayout.setBackgroundColor(color);
+    }
+
     public void setColor(int color){
         pulsingView.setColor(color);
     }
