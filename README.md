@@ -27,7 +27,7 @@ Firstly, add JitPack repo
 Add build.gradle dependency
 
 	dependencies {
-	        implementation 'com.github.metahex:PulsingView:master-SNAPSHOT'
+	        implementation 'com.github.metahex:PulsingView:-SNAPSHOT'
 	}
 	
 # Usage
