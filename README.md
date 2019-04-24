@@ -26,7 +26,7 @@ allprojects {
   
 Add build.gradle dependency
 
-	ependencies {
+	dependencies {
 	        implementation 'com.github.metahex:PulsingView:master-SNAPSHOT'
 	}
 
