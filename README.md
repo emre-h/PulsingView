@@ -1,7 +1,7 @@
 # PulsingView
 An Android Library
 
-# What it can be used for?
+# What can it be used for
 
 Includes two views:
 -PulsingView
@@ -9,7 +9,7 @@ Includes two views:
 
 PulsingView can be used for indeterminate progresses.
 
-PulsingLayout is based on RelativeLayout and includes pulsing view.
+PulsingLayout is based on RelativeLayout and includes PulsingView.
 PulsingLayout can be used for animated relative layout.
 
 
@@ -17,7 +17,7 @@ PulsingLayout can be used for animated relative layout.
 
 Firstly, add JitPack repo
 
-allprojects {
+	allprojects {
 		repositories {
 			...
 			maven { url 'https://jitpack.io' }
@@ -29,6 +29,28 @@ Add build.gradle dependency
 	dependencies {
 	        implementation 'com.github.metahex:PulsingView:master-SNAPSHOT'
 	}
+	
+# Usage
+
+## PulsingView
+
+	PulsingView pulsingView = findViewById(R.id.pulsingView);
+
+        pulsingView.setColor(Color.parseColor("#4DFFFFFF"));
+        pulsingView.setMaxRadius(200);//maximum radius of circle 
+        pulsingView.setIncreaseAmount(5);//radius increase amount per delay
+        pulsingView.setDelayMillis(15);//handler's delay millis. you can set FPS via changing this value
+        pulsingView.setStartingRadius(0);//starting radius of circle
+
+## PulsingLayout
+	
+	PulsingLayout pulsingLayout = findViewById(R.id.pulsingLayout);
+        
+        pulsingLayout.setColor(Color.parseColor("#448AFF"));
+        pulsingLayout.setBackgroundColorOfLayout(Color.parseColor("#000000"));
+	
+	//pulsingLayout.setProgressive(true); 
+        //pulsingLayout.setProgress(50); In development stage, do not use it for now 
 
 # Preview
 
