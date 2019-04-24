@@ -1,7 +1,7 @@
 # PulsingView
 An Android Library
 
-# What does it work
+# What can be used for?
 
 Includes two views:
 -PulsingView
