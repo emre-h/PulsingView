@@ -32,6 +32,11 @@ Add build.gradle dependency
 
 # Preview
 
-![](layout.gif) a
+# PulsingLayout
+
+![](layout.gif)
+
+# PulsingView
+
 ![](pulsing.gif)
 
